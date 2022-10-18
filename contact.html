@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <link rel="stylesheet" href="plugins/animate/animate.min.css">
+
+  <link rel="stylesheet" href="plugins/fontawesome/all.css">
+
+  <link href="plugins/webfonts/font.css"
+    rel="stylesheet">
+  <link rel="stylesheet" href="plugins/owl.carousel/owl.carousel.min.css" type="text/css">
+  <link rel="stylesheet" href="plugins/owl.carousel/owl.theme.default.min.css" type="text/css">
+
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="plugins/uikit/uikit.min.css" />
+
+
+  <title>Liên hệ</title>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        
+      </a>
+      <div class="desk-menu collapse navbar-collapse justify-content-md-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">TRANG CHỦ</a>
+          </li>
+         
+          <li class="nav-item">
+              <a class="nav-link" href="">SẢN PHẨM
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </a>
+              <ul class="sub_menu">
+                <li class="">
+                  <a href="" title="Sản phẩm "> 
+                    Sản phẩm 
+                  </a>
+                </li>
+             
+              </ul>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="introduce.html">GIỚI THIỆU</a>
+          </li>
+         
+          <li class="nav-item active">
+            <a class="nav-link" href="Contact.html">LIÊN HỆ</a>
+          </li>
+        </ul>
+      </div>
+      <div id="offcanvas-flip1" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar" style="background: white;
+        width: 350px;">
+
+          <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+          <h3 style="font-size: 14px;
+                color: #272727;
+                text-transform: uppercase;
+                margin: 3px 0 30px 0;
+                font-weight: 500; letter-spacing: 2px;">MENU</h3>
+          <div class="justify-content-md-center">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">TRANG CHỦ</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Sản phẩm
+
+                </a>
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="introduce.html">GIỚI THIỆU</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">LIÊN HỆ</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar" style="    background: white;
+            width: 350px;">
+
+          <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+
+          <h3 style="font-size: 14px;
+                color: #272727;
+                text-transform: uppercase;
+                margin: 3px 0 30px 0;
+                font-weight: 500; letter-spacing: 2px;">Tìm kiếm</h3>
+          <div class="search-box wpo-wrapper-search">
+            <form action="search" class="searchform searchform-categoris ultimate-search">
+              <div class="wpo-search-inner" style="display:inline">
+                <input type="hidden" name="type" value="product">
+                <input required="" id="inputSearchAuto" name="q" maxlength="40" autocomplete="off"
+                  class="searchinput input-search search-input" type="text" size="20"
+                  placeholder="Tìm kiếm sản phẩm...">
+              </div>
+              <button type="submit" class="btn-search btn" id="search-header-btn">
+                <i style="font-weight:bold" class="fas fa-search"></i>
+              </button>
+            </form>
+            <div id="ajaxSearchResults" class="smart-search-wrapper ajaxSearchResults" style="display: none">
+              <div class="resultsContent"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div id="offcanvas-flip2" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar" style="    background: white;
+                  width: 350px;">
+
+          <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+
+          <h3 style="font-size: 14px;
+                      color: #272727;
+                      text-transform: uppercase;
+                      margin: 3px 0 30px 0;
+                      font-weight: 500; letter-spacing: 2px;">Giỏ hàng</h3>
+          <div class="site-nav-container-last" style="color:#272727">
+            <div class="cart-view clearfix">
+              
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="line"></span>
+              <table class="table-total">
+                <tbody>
+                  <tr>
+                    <td class="text-left">TỔNG TIỀN:</td>
+                    
+                  </tr>
+                  <tr>
+                    <td class="distance-td"><a href="" class="linktocart button dark">Xem giỏ hàng</a></td>
+                    <td><a href="" class="linktocheckout button dark">Thanh toán</a></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <a href="" target="_blank" class="button btn-check" style="text-decoration:none;"><span>Click nhận mã giảm
+                  giá ngay !</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="icon-ol">
+        <a style="color: #272727" href="">
+          <i class="fas fa-user-alt"></i>
+        </a>
+        <a href="#" class="" uk-toggle="target: #offcanvas-flip">
+          <i class="fas fa-search" style="color: black"></i>
+        </a>
+       
+        <a style="color: #272727" href="#" uk-toggle="target: #offcanvas-flip2">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+        <button class="navbar-toggler" type="button" uk-toggle="target: #offcanvas-flip1" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+    </div>
+
+  </nav>
+  <!--Banner-->
+  <div class="breadcrumb-shop">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd5">
+          <ol class="breadcrumb breadcrumb-arrows">
+            <li>
+              <a href="index.html">
+                <span>Trang chủ</span>
+              </a>
+            </li>
+            <li>
+              <span><span style="color: #777777">Liên hệ</span></span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-6 col-sm-12 col-xs-12 box-heading-contact">
+          <div class="box-map">
+            <iframe
+              src="https://www.google.com/maps/place/12+Nguy%E1%BB%85n+V%C4%83n+B%E1%BA%A3o,+Ph%C6%B0%E1%BB%9Dng+4,+H%E1%BB%93+Ch%C3%AD+Minh,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.8222106,106.6853107,17z/data=!3m1!4b1!4m5!3m4!1s0x317528e5496d03cf:0xa5b8e7395ec636b9!8m2!3d10.8222053!4d106.6874994?hl=vi-VN"
+              width="100%" height="700" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12  wrapbox-content-page-contact">
+          <div class="header-page-contact clearfix">
+            <h1>Liên hệ</h1>
+          </div>
+          <div class="box-info-contact">
+            <ul class="list-info">
+              <li>
+                <p>Địa chỉ chúng tôi</p>
+                <p><strong>12 đường Nguyễn Văn Bảo, phường 4, quận Gò Vấp, Tp. Hồ
+                    Chí Minh.</strong></p>
+              </li>
+              <li>
+                <p>Email chúng tôi</p>
+                <p><strong>contact@iuh.edu.vn</strong></p>
+              </li>
+              <li>
+                <p>Điện thoại</p>
+                <p><strong>+84 028 3894 0390</strong></p>
+              </li>
+              <li>
+                <p>Thời gian làm việc</p>
+                <p><strong>Thứ 2 đến Thứ 6 từ 8h đến 18h; Thứ 7 và Chủ nhật từ 9h30 đến 17h00 </strong></p>
+              </li>
+            </ul>
+          </div>
+          <div class="box-send-contact">
+            <h2>Gửi thắc mắc cho chúng tôi</h2>
+            <div id="col-left contactFormWrapper menuList-links">
+              <form accept-charset="UTF-8" action="/contact" class="contact-form" method="post">
+                <div class="contact-form">
+                  <div class="row">
+                    <div class="col-sm-12 col-xs-12">
+                      <div class="input-group">
+                        <input required="" type="text" class="form-control"
+                          placeholder="Tên của bạn">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">  
+                      <div class="input-group">
+                        <input required="" type="text" class="form-control"
+                          placeholder="Email của bạn">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                      <div class="input-group">
+                        <input  required="" type="text" class="form-control"
+                          placeholder="Số điện thoại của bạn">
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-xs-12">
+                      <div class="input-group">
+                        <textarea placeholder="Nội dung"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <button class="button dark">Gửi cho chúng tôi</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
+  <!--gallery-->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="footer-col footer-block">
+              <h4 class="footer-title">
+                Giới thiệu
+              </h4>
+              <div class="footer-content">
+                <p>STATIONERY trang mua sắm dụng cụ văn phòng trực tuyến, nhanh chóng và tiện lợi cho người tiêu dùng</p>
+              
+                <div class="social-list">
+                  <a href="#" class="fab fa-facebook"></a>
+                  <a href="#" class="fab fa-google"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-youtube"></a>
+                  <a href="#" class="fab fa-skype"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="footer-col footer-link">
+              <h4 class="footer-title">
+                PHÁP LÝ &amp; CÂU HỎI
+              </h4>
+              <div class="footer-content toggle-footer">
+                <ul>
+                  <li class="item">
+                    <a href="#" title="Tìm kiếm">Tìm kiếm</a>
+                  </li>
+                  <li class="item">
+                    <a href="#" title="Giới thiệu">Giới thiệu</a>
+                  </li>
+                  <li class="item">
+                    <a href="#" title="Chính sách đổi trả">Chính sách đổi trả</a>
+                  </li>
+                  <li class="item">
+                    <a href="#" title="Chính sách bảo mật">Chính sách bảo mật</a>
+                  </li>
+                  <li class="item">
+                    <a href="#" title="Điều khoản dịch vụ">Điều khoản dịch vụ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="footer-col footer-block">
+              <h4 class="footer-title">
+                Thông tin liên hệ
+              </h4>
+              <div class="footer-content toggle-footer">
+                <ul>
+                  <li><span>Địa chỉ:</span> 12 đường Nguyễn Văn Bảo, phường 4 , TP.Hồ Chí Minh , Vietnam</li>
+                  <li><span>Điện thoại:</span> 028 3894 0390</li>
+              
+                  <li><span>Mail:</span> iuh@edu.vn</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+         
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-footer--copyright">
+      <div class="container">
+        <hr>
+        <div class="main-footer--border" style="text-align:center;padding-bottom: 15px;">
+          <p>Copyright © 2022 <a href="https://runner-inn.myharavan.com">STATIONERY</a>. <a target="_blank"
+              href="https://www.facebook.com/sviuh">Powered by IUH</a></p>
+      </div>
+    </div>
+  </footer>
+  <script async defer crossorigin="anonymous" src="plugins/sdk.js"></script>
+  <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.7/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.7/js/uikit-icons.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/animate/animate.min.css">
+  <link rel="stylesheet" href="plugins/fontawesome/all.css">
+  <link rel="stylesheet" href="plugins/webfonts/font.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="plugins/uikit/uikit.min.css" />
+
+  <title>FRESH FRUIT</title>
+
+</head>
+
+<body>
+  <div class="header">
+    <a style="color: greenyellow;text-decoration: none;" href="index.html">Văn phòng phẩm STATIONERY xin kính chào quý khách!</a>
+  </div>
+
+  <!--Navbar-->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+
+    <div class="container">
+      <div class="desk-menu collapse navbar-collapse justify-content-md-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">TRANG CHỦ</a>
+          </li>
+        
+          <li class="nav-item lisanpham">
+            <a class="nav-link" href="">SẢN PHẨM
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <ul class="sub_menu">
+              <li class="">
+                <a href="" title="Sản phẩm - Style "> 
+                  Sản phẩm 
+              
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="introduce.html">GIỚI THIỆU</a>
+          </li>
+        
+          
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">LIÊN HỆ</a>
+          </li>
+        </ul>
+      </div>
+      <div id="offcanvas-flip1" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar" style="background: white;
+        width: 100%;">
+
+          <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+          <h3 style="font-size: 14px;
+          color: #272727;
+          text-transform: uppercase;
+          margin: 3px 0 30px 0;
+          font-weight: 500; letter-spacing: 2px;">MENU</h3>
+            <div class="justify-content-md-center">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">TRANG CHỦ</a>
+                </li>
+               
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle aaaa"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" >
+                    <p>SẢN PHẨM</p>
+                    <i class="fa fa-angle-double-right"></i>
+
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="border:0;">
+                    <a class="dropdown-item" href="" title="Sản phẩm ">Sản phẩm </a>
+                 
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="introduce.html">GIỚI THIỆU</a>
+                </li>
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="Contact.html">LIÊN HỆ</a>
+                </li>
+              </ul>
+            </div>
+
+        </div>
+      </div>
+      <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar" style="    background: white;
+            width: 350px;">
+
+          <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+
+          <h3 style="font-size: 14px;
+                color: #272727;
+                text-transform: uppercase;
+                margin: 3px 0 30px 0;
+                font-weight: 500; letter-spacing: 2px;">Tìm kiếm</h3>
+          <div class="search-box wpo-wrapper-search">
+            <form action="search" class="searchform searchform-categoris ultimate-search">
+              <div class="wpo-search-inner" style="display:inline">
+                <input type="hidden" name="type" value="product">
+                <input required="" id="inputSearchAuto" name="q" maxlength="40" autocomplete="off"
+                  class="searchinput input-search search-input" type="text" size="20"
+                  placeholder="Tìm kiếm sản phẩm...">
+              </div>
+              <button type="submit" class="btn-search btn" id="search-header-btn">
+                <i style="font-weight:bold" class="fas fa-search"></i>
+              </button>
+            </form>
+            <div id="ajaxSearchResults" class="smart-search-wrapper ajaxSearchResults" style="display: none">
+              <div class="resultsContent"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="offcanvas-flip2" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar" style="    background: white;
+            width: 350px;">
+
+          <button class="uk-offcanvas-close" style="color:#272727" type="button" uk-close></button>
+
+          <h3 style="font-size: 14px;
+                color: #272727;
+                text-transform: uppercase;
+                margin: 3px 0 30px 0;
+                font-weight: 500; letter-spacing: 2px;">Giỏ hàng</h3>
+          <div class="site-nav-container-last" style="color:#272727">
+            <div class="cart-view clearfix">
+              <table id="cart-view">
+               
+              <span class="line"></span>
+              <table class="table-total">
+                <tbody>
+                  <tr>
+                    <td class="distance-td"><a href="" class="linktocart button dark">Xem giỏ hàng</a></td>
+                    <td><a href="" class="linktocheckout button dark">Thanh toán</a></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <a href="" target="_blank" class="button btn-check" style="text-decoration:none;"><span>Click nhận mã giảm
+                  giá ngay !</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="icon-ol">
+        <a style="color: #272727" href="">
+          <i class="fas fa-user-alt"></i>
+        </a>
+        <a href="#" class="" uk-toggle="target: #offcanvas-flip">
+          <i class="fas fa-search" style="color: black"></i>
+        </a>
+        
+        <a style="color: #272727" href="#" uk-toggle="target: #offcanvas-flip2">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+        <button class="navbar-toggler" type="button" uk-toggle="target: #offcanvas-flip1" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+    </div>
+
+  </nav>
+  <!-- Owl-Carousel -->
+  <div class="owl-carousel owl-theme owl-carousel-setting">
+    <div class="item"><img src="images/vpp1.png" class="d-block w-100" alt="..."></div>
+    <div class="item"><img src="images/vpp2.jpg" class="d-block w-100" alt="..."></div>
+</div>
+ 
+  <!--Content-->
+  <div class="content">
+    <div class="container">
+      <div class="hot_sp" style="padding-bottom: 10px;">
+        <h2 style="text-align:center;padding-top: 10px">
+          <a style="font-size: 28px;color: black;text-decoration: none" href="">Sản phẩm bán chạy</a>
+        </h2>
+        <div class="view-all" style="text-align:center;padding-top: -10px;">
+          <a style="color: black;text-decoration: none" href="">Xem thêm</a>
+        </div>
+      </div>
+    </div>
+    <!--Product-->
+    <div class="container" style="padding-bottom: 50px;">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+          <div class="product-block">
+            <div class="product-img fade-box">
+              <a href="#" title="Tập vở" class="img-resize">
+                <img src="images/tapvo.jpg"
+                  alt="Tập vở" class="lazyloaded">
+                <img src="images/tapvo1.jpg" alt="Tập vở" class="lazyloaded">
+              </a>
+             
+            </div>
+            <div class="product-detail clearfix">
+              <div class="pro-text">
+                <a style=" color: black;
+                                                  font-size: 14px;text-decoration: none;" href="#"
+                  title="Adidas EQT Cushion ADV" inspiration pack>
+                  Tập vở
+                </a>
+              </div>
+              <div class="pro-price">
+                <p class="">10,000₫</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+          <div class="product-block">
+            <div class="product-img fade-box">
+              <a href="#" title="Sổ tay" class="img-resize">
+                <img src="images/sotay.jpg" alt="Sổ tay"
+                  class="lazyloaded">
+                <img src="/images/sotay1.jpg" alt="Sổ tay" class="lazyloaded">
+              </a>
+             
+            </div>
+            <div class="product-detail clearfix">
+              <div class="pro-text">
+                <a style=" color: black;
+                                          font-size: 14px;text-decoration: none;" title="Sổ tay" href="">
+                  Sổ tay
+                </a>
+              </div>
+              <div class="pro-price">
+                <p class="">25,000₫</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+          <div class="product-block">
+            <div class="product-img fade-box">
+              <a href="#" title="Ghim" class="img-resize">
+                <img src="images/kepsat_ghim.jpg"
+                  alt="Ghim" class="lazyloaded">
+                <img src="images/kepsat_ghim1.jpg" alt="Ghim" class="lazyloaded">
+              </a>
+             
+            </div>
+            <div class="product-detail clearfix">
+              <div class="pro-text">
+                <a style=" color: black;
+                            font-size: 14px;text-decoration: none;" href="#" title="Ghim" inspiration
+                  pack>
+                  Kẹp sắt nhỏ
+                </a>
+              </div>
+              <div class="pro-price">
+                <p class="">2,000₫</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+          <div class="product-block">
+            <div class="product-img fade-box">
+              <a href="#" title="Bấm ghim" class="img-resize">
+                <img src="images/bamghim.jpg" alt="Bấm ghim"
+                  class="lazyloaded">
+                <img src="images/bamghim1.jpg" alt="Bấm ghim" class="lazyloaded">
+              </a>
+             
+            </div>
+            <div class="product-detail clearfix">
+              <div class="pro-text">
+                <a style=" color: black;
+                       font-size: 14px;text-decoration: none;" href="#" title="Bấm ghim" inspiration pack>
+                  Ghim bấm 
+                </a>
+              </div>
+              <div class="pro-price">
+                <p class="">30,000₫</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+          <div class="product-block">
+            <div class="product-img fade-box">
+              <a href="#" title="Bút bi" class="img-resize">
+                <img class="lazyloaded" src="images/butbi.png"
+                  alt="Bút bi">
+                <img class="lazyloaded" src="images/butbi1.jpg" alt="Bút bi">
+              </a>
+             
+            </div>
+            <div class="product-detail clearfix">
+              <div class="pro-text">
+                <a style=" color: black;
+                      font-size: 14px;text-decoration: none;" href="#" title="Bút bi" inspiration
+                  pack>
+                  Bút bi
+                </a>
+              </div>
+              <div class="pro-price">
+                <p class="">4,000₫</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+          <div class="product-block">
+            <div class="product-img fade-box">
+              <a href="#" title="Bút chì" class="img-resize">
+                <img class="lazyloaded" src="images/butchi.jpg"
+                  alt="Bút chì">
+                <img class="lazyloaded" src="images/butchi1.jpg" alt="Bút chì">
+              </a>
+             
+            </div>
+            <div class="product-detail clearfix"> 
+              <div class="pro-text">
+                <a style=" color: black;
+                      font-size: 14px;text-decoration: none;" href="">
+                  Bút chì
+                </a>
+              </div>
+              <div class="pro-price">
+                <p class="">3,000₫</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+          <div class="product-block">
+            <div class="product-img fade-box">
+              <a href="#" title="Bút đánh dấu" class="img-resize">
+                <img class="lazyloaded" src="images/butdanhdau.jpg"
+                  alt="Bút đánh dấu">
+                <img class="lazyloaded" src="images/butdanhdau1.jpg" alt="Bút đánh dấu">
+              </a>
+            
+            </div>
+            <div class="product-detail clearfix">
+              <div class="pro-text">
+                <a style=" color: black;
+                      font-size: 14px;text-decoration: none;" href="#" title="Bút đánh dấu" inspiration pack>
+                  Bút đánh dấu
+                </a>
+              </div>
+              <div class="pro-price">
+                <p class="">23,000₫</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+          <div class="product-block">
+            <div class="product-img fade-box">
+              <a href="#" title="Bìa hồ sơ" class="img-resize">
+                <img class="lazyloaded" src="images/biahoso.jpg"
+                  alt=" Bìa hồ sơ">
+                <img class="lazyloaded" src="images/biahoso1.jpg" alt=" Bìa hồ sơ">
+              </a>
+             
+            </div>
+            <div class="product-detail clearfix">
+              <div class="pro-text">
+                <a style=" color: black;
+                       font-size: 14px;text-decoration: none;" href="#" title="Bìa hồ sơ" inspiration
+                  pack>
+                  Bìa hồ sơ
+                </a>
+              </div>
+              <div class="pro-price">
+                <p class="">16,000₫</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="section wrapper-home-banner">
+      <div class="container-fluid" style="padding-bottom: 50px;">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 home-banner-pd">
+            <div class="block-banner-category">
+              <a href="#" class="link-banner wrap-flex-align flex-column">
+                <div class="fg-image fade-box">
+                  <img class="lazyloaded" src="images/vpp3.jpg" alt="">
+                </div>
+                <figcaption class="caption_banner site-animation">
+                  <p></p>
+                  <h2>
+                    Sản phẩm
+                  </h2>
+                </figcaption>
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 home-banner-pd">
+            <div class="block-banner-category">
+              <a href="#" class="link-banner wrap-flex-align flex-column">
+                <div class="fg-image fade-box">
+                  <img class="lazyloaded" src="images/vpp4.jpg" alt="TH">
+                </div>
+                <figcaption class="caption_banner site-animation">
+                  <p>Bộ sưu tập</p>
+                  <h2>
+                    Thương hiệu
+                  </h2>
+                </figcaption>
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 home-banner-pd">
+            <div class="block-banner-category">
+              <a href="#" class="link-banner wrap-flex-align flex-column">
+                <div class="fg-image">
+                  <img class="lazyloaded" src="images/vpp5.jpg" alt="BLOG">
+                </div>
+                <figcaption class="caption_banner site-animation">
+                  <p></p>
+                  <h2>
+                    Blog
+                  </h2>
+                </figcaption>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="content">
+        <div class="container">
+          <div class="hot_sp">
+            <h2 style="text-align:center;">
+              <a style="font-size: 28px;color: black;text-decoration: none" href="">Sản phẩm mới</a>
+            </h2>
+            <div class="view-all" style="text-align:center;">
+              <a style="color: black;text-decoration: none" href="">Xem thêm</a>
+            </div>
+          </div>
+        </div>
+        <!--Product-->
+      </div>
+      <div class="container product" style="width: 100%;margin: auto;">
+        <div class="owl-carousel owl-theme owl-product-setting">
+          <div class="item">
+            <div class="">
+              <div class="product-block">
+                <div class="product-img fade-box">
+                  <a href="#" title="Bút chì kim" class="img-resize">
+                    <img src="images/butchikim.webp" alt="Bút chì kim"
+                      class="lazyloaded">
+                    <img src="images/butchikim.webp" alt="Bút chì kim" class="lazyloaded">
+                  </a>
+                 
+                </div>
+                <div class="product-detail clearfix">
+                  <div class="pro-text">
+                    <a style=" color: black;
+                           font-size: 14px;text-decoration: none;" href="#" title="Bút chì kim" inspiration pack>
+                      Bút chì kim
+                    </a>
+                  </div>
+                  <div class="pro-price">
+                    <p class="">27,000₫</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="">
+              <div class="product-block">
+                <div class="product-img fade-box">
+                  <a href="#" title="Bút khách sạn" class="img-resize">
+                    <img src="images/butks.jpg" alt="Bút khách sạn"
+                      class="lazyloaded">
+                    <img src="images/butks.jpg" alt="Bút khách sạn" class="lazyloaded">
+                  </a>
+                 
+                </div>
+                <div class="product-detail clearfix">
+                  <div class="pro-text">
+                    <a style=" color: black;
+                           font-size: 14px;text-decoration: none;" href="#" title="Bút khách sạn" inspiration pack>
+                      Bút khách sạn
+                    </a>
+                  </div>
+                  <div class="pro-price">
+                    <p class="">40,000₫</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="">
+              <div class="product-block">
+                <div class="product-img fade-box">
+                  <a href="#" title="Dụng cụ VS" class="img-resize">
+                    <img src="images/dungcuvsvp.jpeg" alt="Dụng cụ VS"
+                      class="lazyloaded">
+                    <img src="images/dungcuvsvp.jpeg" alt="HDụng cụ VS" class="lazyloaded">
+                  </a>
+                 
+                </div>
+                <div class="product-detail clearfix">
+                  <div class="pro-text">
+                    <a style=" color: black;
+                           font-size: 14px;text-decoration: none;" href="#" title="Dụng cụ VS" inspiration pack>
+                      Dụng cụ vệ sinh văn phòng
+                    </a>
+                  </div>
+                  <div class="pro-price">
+                    <p class="">120,000₫</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="">
+              <div class="product-block">
+                <div class="product-img fade-box">
+                  <a href="#" title="Sổ danh thiếp" class="img-resize">
+                    <img src="images/sodanhthiep.jpg" alt="Sổ danh thiếp"
+                      class="lazyloaded">
+                    <img src="images/sodanhthiep.jpg" alt="Sổ danh thiếp" class="lazyloaded">
+                  </a>
+                 
+                </div>
+                <div class="product-detail clearfix">
+                  <div class="pro-text">
+                    <a style=" color: black;
+                           font-size: 14px;text-decoration: none;" href="#" title="Sổ danh thiếp " inspiration pack>
+                      Sổ danh thiếp
+                    </a>
+                  </div>
+                  <div class="pro-price">
+                    <p class="">44,000₫</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="">
+              <div class="product-block">
+                <div class="product-img fade-box">
+                  <a href="#" title="Con dấu" class="img-resize">
+                    <img src="images/condauvanphong.jpg" alt="Con dấu"
+                      class="lazyloaded">
+                    <img src="images/condauvanphong.jpg" alt="Con dấu" class="lazyloaded">
+                  </a>
+                 
+                </div>
+                <div class="product-detail clearfix">
+                  <div class="pro-text">
+                    <a style=" color: black;
+                           font-size: 14px;text-decoration: none;" href="#" title="Con dấu" inspiration pack>
+                      Con dấu văn phòng
+                    </a>
+                  </div>
+                  <div class="pro-price">
+                    <p class="">55,000₫</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="">
+              <div class="product-block">
+                <div class="product-img fade-box">
+                  <a href="#" title="Pen set" class="img-resize">
+                    <img src="images/penset.jpg" alt="Pen set"
+                      class="lazyloaded">
+                    <img src="images/penset.jpg" alt="Pen set" class="lazyloaded">
+                  </a>
+                 
+                </div>
+                <div class="product-detail clearfix">
+                  <div class="pro-text">
+                    <a style=" color: black;
+                           font-size: 14px;text-decoration: none;" href="#" title="Pen set" inspiration pack>
+                      Bộ bút văn phòng
+                    </a>
+                  </div>
+                  <div class="pro-price">
+                    <p class="">70,000₫</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+
+    <section class="section wrapper-home-newsletter">
+      <div class="container-fluid">
+        <div class="content-newsletter">
+          <h2>Đăng ký</h2>
+          <p>Đăng ký nhận bản tin của STATIONERY để cập nhật những sản phẩm mới, nhận thông tin ưu đãi đặc biệt và thông
+            tin
+            giảm giá khác.</p>
+          <div class="form-newsletter">
+            <form action="" accept-charset="UTF-8" class="">
+              <div class="form-group">
+                <input type="hidden" id="contact_tags">
+                <input required="" type="email" value="" placeholder="Nhập email của bạn" aria-label="Email Address"
+                  class="">
+                <button type="submit" class=""><span>Gửi</span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="main-footer">
+      <div class="container">
+        <div class="">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="footer-col footer-block">
+                <h4 class="footer-title">
+                  Giới thiệu
+                </h4>
+                <div class="footer-content">
+                  <p>STATIONERY trang mua sắm dụng cụ văn phòng trực tuyến, nhanh chóng và tiện lợi cho người tiêu dùng</p>
+                  <div class="social-list">
+                    <a href="#" class="fab fa-facebook"></a>
+                    <a href="#" class="fab fa-google"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-youtube"></a>
+                    <a href="#" class="fab fa-skype"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="footer-col footer-link">
+                <h4 class="footer-title">
+                  PHÁP LÝ &amp; CÂU HỎI
+                </h4>
+                <div class="footer-content toggle-footer">
+                  <ul>
+                    <li class="item">
+                      <a href="#" title="Tìm kiếm">Tìm kiếm</a>
+                    </li>
+                    <li class="item">
+                      <a href="#" title="Giới thiệu">Giới thiệu</a>
+                    </li>
+                    <li class="item">
+                      <a href="#" title="Chính sách đổi trả">Chính sách đổi trả</a>
+                    </li>
+                    <li class="item">
+                      <a href="#" title="Chính sách bảo mật">Chính sách bảo mật</a>
+                    </li>
+                    <li class="item">
+                      <a href="#" title="Điều khoản dịch vụ">Điều khoản dịch vụ</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="footer-col footer-block">
+                <h4 class="footer-title">
+                  Thông tin liên hệ
+                </h4>
+                <div class="footer-content toggle-footer">
+                  <ul>
+                    <li><span>Địa chỉ:</span>12 đường Nguyễn Văn Bảo, phường 4 , TP.Hồ Chí Minh , Vietnam</li>
+                    <li><span>Điện thoại:</span>  028 3894 0390</li>
+                  
+                    <li><span>Mail:</span> @iuh.edu.vn</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="footer-col footer-block">
+               
+                <div class="footer-content">
+                  
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-footer--copyright">
+        <div class="container">
+          <hr>
+          <div class="main-footer--border" style="text-align:center;padding-bottom: 15px;">
+            <p>Copyright © 2022 <a href="https://runner-inn.myharavan.com"> STATIONERY</a>. <a target="_blank"
+                href="https://www.facebook.com/sviuh">Powered by IUH</a></p>
+        
+            </div>
+    </footer>
+  </div>
+  <div class="registratior_custom">
+    <form action="">
+        <div class="content">
+          <div class="x-close">
+            <i class="fa fa-times"></i>
+          </div>
+          <h3>Nhận các ưu đãi cùng STATIONERY </h3>
+          <p>Chúng tôi sẽ cập nhật các chương trình khuyến mãi mới đến bạn</p>
+          <ul>
+            <li>
+              <span>Giảm giá sản phẩm</span>
+            </li>
+            <li>
+              <span>Sản phẩm mới</span>
+            </li>
+            <li>
+              <span>Sản phẩm bán chạy/span>
+            </li>
+          </ul>
+          <input type="text" placeholder="Đăng kí nhận thông tin">
+          <button class="button_register"><p>ĐĂNG KÍ</p></button>
+        </div>
+    </form>
+  </div>
+  <script async defer crossorigin="anonymous" src="plugins/sdk.js"></script>
+  <script src="plugins/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <script src="plugins/bootstrap/popper.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="plugins/owl.carousel/owl.carousel.min.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/script.js"></script>
+  <script src="plugins/uikit/uikit.min.js"></script>
+  <script src="plugins/uikit/uikit-icons.min.js"></script>
+</body>
+
+</html>
